@@ -83,7 +83,7 @@ resource "aws_vpc" "opedinasvpc-private-3"
 
 
 # Internet GW
-resource "aws_internet_gateway" opedinas-gw" {
+resource "aws_internet_gateway" "opedinas-gw" {
  vpc_id = aws_vpc.opedinasvpc.id
 
 tags = {
